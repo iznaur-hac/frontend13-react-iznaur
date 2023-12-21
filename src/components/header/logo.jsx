@@ -1,11 +1,11 @@
-import logo from '../../assets/images/Counter.png'
+import imgLogo from '../../assets/images/Group 3.svg'
 
-function Logo() {
+function logo() {
     return(
-        <div className='logo'>
-            <img src={logo} alt=""/>
+        <div>
+            <img src={imgLogo} alt="" />
         </div>
     )
 }
 
-export default Logo;
+export default logo

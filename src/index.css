@@ -1,3 +1,5 @@
+ @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -6,126 +8,166 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
+  background-color: #222;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+p{
+  margin: 0px;
+}
 .container{
-  max-width: 1000px;
+  max-width: 1400px;
   margin: auto;
 }
-
-.logo img{
-  width: 154px;
-  height: auto;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 0px;
-}
-
-.menu ul{
-  display: flex;
-  align-items: center;
-  column-gap: 15px;
-
-}
-
-.menu li{
-  list-style: none;
-}
-
-.menu a{
-  text-decoration: none;
-  color: black;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.number{
-  color: #393939;
-  text-align: center;
-  font-size: 288px;
+.logo-text{
+  font-family: 'Ubuntu';
+  font-size: 24.374px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin: auto 0px;
-  margin-top: -20px;
+  background: linear-gradient(93deg, #63C700 4.19%, #6FD40A 18.75%, #6DCF0B 32.04%, #6ED209 43.84%, #6ED805 58.11%, #72DC09 70.91%, #75E00A 83.7%, #71DF03 94.53%, #76E903 98.66%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-
-.plus{
-  width: 55px;
+.header{
+  margin-top: 90px;
+  display: flex;
+  justify-content: space-between;
 }
-
-.minus{
-  width: 55px;
+.main-text{
+  margin-top: 70px;
 }
-
-.revers{
-  width: 55px;
-  height: auto;
+.main-title{
+  font-family: 'Ubuntu';
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: linear-gradient(101deg, #75E00A 3.24%, #03e8d8 30%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-
-.revers img{
-  width: 100%;
+.main-subtitle{
+  color: #FFF;
+  font-family: 'Ubuntu';
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
-
-.plus img{
-  width: 100%;
+.spec-cont{
+  max-width: 720px;
 }
-
-.minus img{
-  width: 100%;
+.swiper-img{
+  width: 720px;
 }
+.swiper-img img{
+  max-width: 100%;
+}
+.catalog-title{
+  text-align: center;
 
-.buttons{
+}
+.catalog-title p{
+  color: #63C700;
+  font-family: 'Ubuntu';
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.catalog{
+  margin-top: 100px;
+}
+.catalog-buttons{
   display: flex;
   justify-content: space-around;
   margin-top: 50px;
 }
-
-.minus:hover{
+.catalog-button{
+  border: solid 1px #63C700;
+  font-family: 'Ubuntu';
+  font-size: 16px;
+  font-weight: 700;
+  color: #63C700;
+  background-color: #222;
+  padding: 5px 7px;
+  border-radius: 6px;
+  transition: all 0.5s;
+}
+.catalog-button:hover{
+  padding: 3px 4px;
+  font-size: 14px;
   cursor: pointer;
+  transition: all 0.5s;
+  background-color: #63C700;
+  color: #222;
 }
 
-.plus:hover{
-  cursor: pointer;
-}
-
-.revers:hover{
-  cursor: pointer;
-}
-.footer{
+.plant-item{
+  width: 200px;
+  height: 280px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 100px;
+  flex-direction: column;
+  position: relative;
+  column-gap: 10px;
+  border-radius: 20px;
+  -webkit-box-shadow: 26px 28px 23px 7px rgba(0, 0, 0, 0.2);
+-moz-box-shadow: 26px 28px 23px 7px rgba(0, 0, 0, 0.2);
+box-shadow: 26px 28px 23px 7px rgba(0, 0, 0, 0.2);
+cursor: pointer;
 }
-.footer-list{
+.plant-img{
+  width: 200px;
+  align-self: center;
+}
+.plant-img img{
+  max-width: 100%;
+  border-top-left-radius: 20px ;
+  border-top-right-radius: 20px;
+}
+.plant-item-text p{
+  color: #FFF;
+  font-family: 'Ubuntu';
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.catalog-main{
   display: flex;
-  column-gap: 15px;
+  flex-wrap: wrap;
+  column-gap: 80px;
+  row-gap: 50px;
+  margin-top: 60px;
 }
-.footer-list li{
-  list-style: none;
-}
-.footer-list a{
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.50);
+.plant-item-text span{
+  color: #FFF;
+  font-family: 'Ubuntu';
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
-.footer-cop{
-  color: rgba(0, 0, 0, 0.50);
+.delete-button{
+  position: absolute;
+  padding: 5px 10px;
+  bottom: 0px;
+  right: 0px;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  border-bottom-right-radius: 20px;
+  background-color: green;
+  border: 1px solid green;
+  transition: all .3s;
+}
+.delete-button:hover{
+  background-color: red;
+  border-color: red;
+  cursor: pointer;
+  transition: all .3s;
 }
