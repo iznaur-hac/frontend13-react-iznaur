@@ -53,7 +53,6 @@ const reducer = (state = initialState, action) => {
           action.payload === index ? {...item, done: !item.done} : {...item}
         )
       ]
-      break
 
     default:
       return state;
