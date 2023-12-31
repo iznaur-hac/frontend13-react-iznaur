@@ -47,6 +47,13 @@ const reducer = (state = initialState, action) => {
       } else {
         return state;
       }
+    case "SWAP":
+      state =[
+        ...state.map((item, index) =>
+          action.payload === index ? {...item, done: !item.done} : {...item}
+        )
+      ]
+      break
 
     default:
       return state;
